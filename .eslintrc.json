@@ -10,14 +10,20 @@
     "no-unused-vars": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
-    "react/no-unescaped-entities": 0
+    "react/no-unescaped-entities": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   },
   "overrides": [
     {
       "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
       "rules": {
         // example of overriding a rule
-        "storybook/hierarchy-separator": "error"
+        // "storybook/hierarchy-separator": "error"
       }
     }
   ],
